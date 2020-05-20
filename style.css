@@ -1,0 +1,852 @@
+/*GENERAL PROPERTIES*/
+.container { /*Задаем положение контейнера, его ширину, высоту и выравнивание по центру*/
+    position: relative;
+    top: -8px;
+    width: 1440px;
+    height: 6677px;
+    display: inline-flex;
+    margin: 0 auto;
+}
+body { /*Задаем серый фон, который будет виден за границами сайта, задаем параметры шрифта по умолчанию*/
+    background: #E5E5E5;
+    font-family: Open Sans;
+    font-size: 12px;
+    color: #FFFFFF;
+    font-style: normal;
+    font-weight: normal;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+.about, .booking, .menu, .contact { /*Задаем цвет фона для страниц ABOUT, BOOKING, MENU и CONTACT*/
+    background-color:#FFFFFF;
+}
+h2 { /*Задаем параметры текста для всех заголовков h2*/
+    width: 100%;
+    height: 100px;
+    justify-content: space-around;
+    font-size: 12px;
+    line-height: 14px;
+    font-weight: normal;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.5em;
+}
+h3 { /*Задаем параметры текста для всех заголовков h3*/
+    height: 56px;
+    font-family: Banny;
+    font-size: 36px;
+    line-height: 48px;
+    text-align: center;
+    font-weight: normal;
+    color: #000000;
+}
+.rectangle { /*Задаем размеры и цвет заливки для всех маленьких прямоугольников*/
+    width: 60px;
+    height: 5px;
+    background: #E8C300;
+    border-radius: 50px;
+}
+.block_paragraph { /*Задаем размеры блока с двумя параграфами и цвет текста внутри них*/
+    width: 600px;
+    height: 180px;
+    color: #000000;
+}
+.text_1 { /*Задаем размеры размер шрифта для первого параграфа и выделение жирным*/
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 28px;
+}
+.text_2 { /*Задаем размеры размер шрифта для второго параграфа*/
+    font-size: 14px;
+    line-height: 24px;
+}
+.rectangle_block_1 { /*Задаем положение, скругление и тени первой части большого прямоугольника*/
+    position: relative;
+    top: 113px;
+    left: 80px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 100px rgba(0, 0, 0, 0.5);
+}
+.rectangle_block_2 { /*Задаем положение, скругление и тени второй части большого прямоугольника*/
+    position: relative;
+    top: 343px;
+    left: -174px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 100px rgba(0, 0, 0, 0.5);
+}
+.rectangle_block_3 { /*Задаем положение, поворот, скругление и тени третьей части большого прямоугольника*/
+    position: relative;
+    top: 228px;
+    left: -311px;
+    transform: rotate(-90deg);
+    box-shadow: 0px 0px 100px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+}
+.rectangle_block_4 { /*Задаем положение, поворот и скругление четвертой части большого прямоугольника*/
+    position: relative;
+    top: 228px;
+    left: -798px;
+    transform: rotate(-90deg);
+    border-radius: 5px;
+}
+.image { /*Задаем размеры, скругление и тени для картинки*/
+    box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    width: 475px;
+    height: 475px;
+}
+.small_text { /*Задаем размеры шрифта и выравнивание по вертикали для мелкого текста*/
+    font-size: 12px;
+    line-height: 12px;
+    text-align: center;
+}
+.button { /*Задаем размеры и цвет всем кнопкам по умолчанию*/
+    width: 200px;
+    height: 60px;
+    border-radius: 5px;
+    background: #E8C300;
+    border: 1px solid #E8C300;
+}
+.input { /*Задаем параметры для всех полей форм по умолчанию*/
+    width: 277px;
+    height: 60px;
+    background: #E5E5E5;
+    border: #E5E5E5;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/*RESTAURANT*/
+.restaurant { /*Задаем положение блока restaurant, ширину в относительных единицах, высоту в рх, фоновое изображение*/
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 800px;
+    background: url("img/header/header-bg.jpg");
+}
+.navigation { /*Задаем положение блока navigation, ширину в относительных единицах, высоту в рх*/
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 175px;
+}
+.navigation a { /*Задает цвет элементов меню, высоту строки и убирает подчеркивание*/
+    text-decoration: none;
+    color: #FFFFFF;
+    line-height: 18px;
+}
+
+.navigation ul { /*Задаем выравнивание и отступ слева для списка меню на странице RESTAURANT*/
+    display: flex;
+    margin-left: 62px;
+}
+.navigation li { /*Задаем параметры для элементов списка меню на странице RESTAURANT*/
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-around;
+    margin-top: -14px;
+    margin-left: 0px;
+    width: 133px;
+    height: 100px;
+}
+.navigation li:nth-child(5) { /*Задаем особы размеры и отступы для 5го элемента в списке меню (логотип)*/
+    width: 150px;
+    height: 150px;
+    margin-top: 17px;
+    margin-left: 10px;
+}
+
+/*СОЗДАНИЕ ЭФФЕКТА ИЗМЕНЕНИЯ ЦВЕТА ССЫЛОК И ПОДЧЕРКИВАНИЯ ИХ ИЗ ЦЕНТРА*/
+.navigation a {
+    display: inline-block;
+    line-height: 1;
+    text-decoration: none;
+    cursor: pointer;
+    position: relative;
+}
+.navigation a:after {
+    display: block;
+    content: "";
+    background-color: #E8C300;
+    height: 3px;
+    width: 0%;
+    left: 50%;
+    position: absolute;
+    -webkit-transition: width .3s ease-in-out;
+    -moz--transition: width .3s ease-in-out;
+    transition: width .3s ease-in-out;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+.navigation a:hover:after,
+.navigation a:focus:after {
+    width: 100%;
+}
+.navigation a:hover {
+    color: red;
+} /*ОКОНЧАНИЕ ЭФФЕКТА ИЗМЕНЕНИЯ ЦВЕТА ССЫЛОК И ПОДЧЕРКИВАНИЯ ИХ ИЗ ЦЕНТРА*/
+
+.restaurant_text { /*Задаем высоту строки и отступ сверху для заголовка "RESTAURANT"*/
+    height: 18px;
+    margin-top: 150px;
+}
+h1 { /*Задаем параметры текста для заголовка h1*/
+    width: 998px;
+    height: 139px;
+    font-family: Banny;
+    font-size: 96px;
+    font-weight: normal;
+    line-height: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: -11px;
+    margin-left: 222px;
+}
+.restaurant_rectangle { /*Задаем положение маленького прямоугольника на странице RESTAURANT*/
+    position: relative;
+    top: -72px;
+}
+.restaurant_small_text { /*Задаем положение и параметры маленького текста на странице RESTAURANT*/
+    position: relative;
+    top: -220px;
+    left: -239px;
+    font-weight: 550;
+    width: 698px;
+    height: 60px;
+    transform: rotate(-90deg);
+}
+.social_links { /*Задаем положение и размеры блока социальных ссылок на странице RESTAURANT*/
+    position: relative;
+    top: -380px;
+    left: 1299px;
+    width: 60px;
+    height: 220px;
+}
+.twitter, .instagram { /*Задаем отступы сверху для значков социальных сетей twitter и instagram*/
+    padding-top: 13px;
+}
+
+/*СОЗДАНИЕ ЭФФЕКТА ИЗМЕНЕНИЯ РАЗМЕРА ЗНАЧКОВ СОЦИАЛЬНЫХ СЕТЕЙ*/
+.social_links img:hover {
+    transform: scale(1.2);
+} /*ОКОНЧАНИЕ ЭФФЕКТА ИЗМЕНЕНИЯ РАЗМЕРА ЗНАЧКОВ СОЦИАЛЬНЫХ СЕТЕЙ*/
+
+.restaurant_buttons { /*Задаем положение и размеры блока из двух кнопок на странице RESTAURANT*/
+    position: relative;
+    top: -44px;
+    left: 501px;
+    width: 440px;
+    height: 60px;
+    display: flex;
+}
+.restaurant_buttons a { /*Задаем параметры тексту кнопок на странице RESTAURANT*/
+    font-weight: bold;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+.explore { /*Задаем цвет и отступ кнопоке EXPLORE на странице RESTAURANT*/
+    position: relative;
+    left: 36px;
+    background: none;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+}
+.line { /*Задаем общие свойства для направляющих линий на странице RESTAURANT*/
+    height: 1px;
+    border: 0.5px solid rgba(255, 255, 255, 0.2);
+}
+.line_1 { /*Задаем свойства для line_1 на странице RESTAURANT*/
+    width: 530px;
+    position: relative;
+    left: -350px;
+    top: -908px;
+}
+.line_2 { /*Задаем свойства для line_2 на странице RESTAURANT*/
+    width: 530px;
+    position: relative;
+    left: 350px;
+    top: -916px;
+}
+.line_3 { /*Задаем свойства для line_3 на странице RESTAURANT*/
+    width: 700px;
+    position: relative;
+    left: -423px;
+    top: -573px;
+    transform: rotate(-90deg);
+}
+.line_4 { /*Задаем свойства для line_4 на странице RESTAURANT*/
+    width: 700px;
+    position: relative;
+    left: 427px;
+    top: -580px;
+    transform: rotate(-90deg);
+}
+.line_5 { /*Задаем свойства для line_5 на странице RESTAURANT*/
+    width: 454px;
+    position: relative;
+    left: 0px;
+    top: -609px;
+    transform: rotate(-90deg);
+}
+.line_6 { /*Задаем свойства для line_6 на странице RESTAURANT*/
+    width: 82px;
+    position: relative;
+    top: -288px;
+    transform: rotate(-90deg);
+}
+.down_btn { /*Задаем положение down_btn RESTAURANT*/
+    position: relative;
+    top: -278px;
+    left: -1px;
+}
+
+/*ABOUT*/
+.about { /*Задаем положение блока ABOUT, ширину и высоту в рх, цвет фона*/
+    position: relative;
+    margin-top: 801px;
+    margin-left: -1440px;
+    width: 1440px;
+    height: 675px;
+}
+.about_header { /*Задаем положение для заголовка текстового блока на странице ABOUT и его ширину в рх*/
+    position: relative;
+    top: 180px;
+    left: 245px;
+    width: 270px;
+}
+.about_block_paragraph { /*Задаем положение для блока c двумя параграфами на странице ABOUT*/
+    position: relative;
+    top: 132px;
+    left: 81px;
+}
+.about_rectangle { /*Задаем положение для маленького прямоугольника на странице ABOUT*/
+    position: relative;
+    top: 136px;
+    left: -339px;
+}
+.about_image { /*Задаем положение картинки на странице ABOUT*/
+    position: relative;
+    top: -229px;
+    left: 278px;
+}
+.about_rectangle_block { /*Задаем положение картинки с большим прямоугольником на странице ABOUT*/
+    position: relative;
+    top: -710px;
+    left: 814px;
+}
+
+/*TEAM*/
+.team { /*Задаем положение блока TEAM, ширину и высоту в рх, цвет фона*/
+    position: relative;
+    margin-top: 1477px;
+    margin-left: -1440px;
+    width: 1440px;
+    height: 675px;
+    background: url("img/team/team-bg.jpg");
+}
+.team_header { /*Задаем положение для заголовка текстового блока на странице TEAM и его ширину в рх*/
+    position: relative;
+    top: 180px;
+    left: 245px;
+    width: 270px;
+    color: #FFFFFF;
+}
+.team_block_paragraph { /*Задаем положение для блока c двумя параграфами на странице TEAM*/
+    position: relative;
+    top: 132px;
+    left: 81px;
+    color: #FFFFFF;
+}
+.team_rectangle { /*Задаем положение для маленького прямоугольника на странице TEAM*/
+    position: relative;
+    top: 136px;
+    left: -339px;
+}
+.team_image { /*Задаем положение картинки на странице TEAM*/
+    position: relative;
+    top: -338px;
+    left: -288px;
+    z-index: 3;
+}
+.team_rectangle_block { /*Задаем положение картинки с большим прямоугольником на странице TEAM*/
+    position: relative;
+    top: -817px;
+    left: -210px;
+    z-index: 4;
+}
+.team_block_text { /*Задаем положение текстового блока на странице TEAM*/
+    position: relative;
+    top: -110px;
+    left: 657px;
+}
+.team_text { /*Задаем положение заголовка на странице TEAM*/
+   position: relative;
+   top: 100px;
+   left: -658px;
+}
+.line_7, .line_8, .line_9 { /*Задаем положение и общие параметры для вертикальных линий на странице TEAM*/
+    position: relative;
+    margin-top: -619px;
+    width: 675px;
+    transform: rotate(90deg);
+}
+.line_8 { /*Задаем положение для одной вертикальной линии (справа) на странице TEAM*/
+    position: relative;
+    margin-top: -10px;
+    left: 424px;
+}
+.line_9 { /*Задаем положение и z-index для одной вертикальной линии (слева) на странице TEAM*/
+    position: relative;
+    margin-top: -8px;
+    left: -424px;
+    z-index: 2;
+}
+
+/*BOOKING*/
+.booking { /*Задаем положение блока BOOKING, ширину и высоту в рх, цвет фона*/
+    position: relative;
+    margin-top: 2153px;
+    margin-left: -1440px;
+    width: 1440px;
+    height: 675px;
+}
+.booking_header { /*Задаем положение для заголовка текстового блока на странице BOOKING и его ширину в рх*/
+    position: relative;
+    top: 125px;
+    left: 135px;
+    width: 566px;
+}
+.booking_rectangle { /*Задаем положение для маленького прямоугольника на странице BOOKING*/
+    position: relative;
+    top: 80px;
+    left: -300px;
+}
+.booking_image { /*Задаем положение картинки на странице BOOKING*/
+    position: relative;
+    top: -318px;
+    left: 289px;
+}
+.booking_rectangle_block { /*Задаем положение большого прямоугольником на странице BOOKING*/
+    position: relative;
+    top: -775px;
+    left: 798px;
+    transform: scale(0.9);
+}
+.booking_small_text { /*Задаем положение мелкого текста на странице BOOKING*/
+    position: relative;
+    top: -360px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgba(51, 51, 51, 0.5);
+}
+.booking_form { /*Задаем положение формы на странице BOOKING*/
+    position: relative;
+    top: 95px;
+    left: 135px;
+    width: 566px;
+    height: 270px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.booking_submit { /*Задаем параметры для кнопки отправки формы на странице BOOKING*/
+    width: 566px;
+    height: 60px;
+    position: relative;
+    top: 5px;
+    left: 0px;
+    background: #E8C300;
+    border: 1px solid #E8C300;
+    border-radius: 5px;
+    color: #FFFFFF;
+}
+
+/*SPECIALTIES*/
+.specialties { /*Задаем положение блока SPECIALTIES, ширину и высоту в рх, цвет фона*/
+    position: relative;
+    margin-top: 2828px;
+    margin-left: -1440px;
+    width: 1440px;
+    height: 675px;
+    background: url("img/specialties/specialties-bg.jpg");
+}
+.specialties_header { /*Задаем положение для заголовка текстового блока на странице SPECIALTIES и его ширину в рх*/
+    position: relative;
+    top: 180px;
+    left: 80px;
+    width: 600px;
+    color: #FFFFFF;
+}
+.specialties_block_paragraph { /*Задаем положение для блока c двумя параграфами на странице SPECIALTIES*/
+    position: relative;
+    top: 132px;
+    left: 81px;
+    color: #FFFFFF;
+}
+.specialties_rectangle { /*Задаем положение для маленького прямоугольника на странице SPECIALTIES*/
+    position: relative;
+    top: 136px;
+    left: -339px;
+}
+.specialties_image { /*Задаем положение картинки на странице SPECIALTIES*/
+    position: relative;
+    top: -338px;
+    left: -288px;
+    z-index: 3;
+}
+.specialties_rectangle_block { /*Задаем положение картинки с большим прямоугольником на странице SPECIALTIES*/
+    position: relative;
+    top: -817px;
+    left: -210px;
+    z-index: 4;
+}
+.specialties_block_text { /*Задаем положение текстового блока на странице SPECIALTIES*/
+    position: relative;
+    top: -110px;
+    left: 657px;
+}
+.specialties_text { /*Задаем положение заголовка на странице SPECIALTIES*/
+   position: relative;
+   top: 100px;
+   left: -657px;
+}
+.line_70, .line_80, .line_90 { /*Задаем положение и общие параметры для вертикальных линий на странице SPECIALTIES*/
+    position: relative;
+    margin-top: -620px;
+    left: 0px;
+    width: 675px;
+    transform: rotate(90deg);
+}
+.line_80 { /*Задаем положение для одной вертикальной линии (справа) на странице SPECIALTIES*/
+    position: relative;
+    margin-top: -10px;
+    left: 424px;
+}
+.line_90 { /*Задаем положение и z-index для одной вертикальной линии (слева) на странице SPECIALTIES*/
+    position: relative;
+    margin-top: -10px;
+    left: -424px;
+    z-index: 2;
+}
+
+/*MENU*/
+.menu { /*Задаем положение блока MENU, ширину и высоту в рх, цвет фона*/
+    position: relative;
+    margin-top: 3500px;
+    margin-left: -1440px;
+    width: 1440px;
+    height: 920px;
+}
+.menu_header { /*Задаем положение для заголовка текстового блока на странице MENU и его ширину в рх*/
+    position: relative;
+    top: 63px;
+    left: 80px;
+    width: 1280px;
+}
+.menu_block_paragraph { /*Задаем положение для параграфа на странице MENU*/
+    position: relative;
+    top: 15px;
+    left: 438px;
+    width: 565px;
+    height: 76px;
+}
+.menu_rectangle { /*Задаем положение для маленького прямоугольника на странице MENU*/
+    position: relative;
+    top: 20px;
+    left: 0px;
+}
+.price { /*Задаем положение и параметры для блоков price на странице MENU*/
+    width: 1280px;
+    height: 462px;
+    margin: 165px auto;
+    display: flex;
+    text-align: start;
+    justify-content: space-between;
+    font-family: Banny;
+    font-size: 18px;
+    line-height: 18px;
+    color: #333333; 
+}
+.price_column_1, .price_column_2, .price_column_3 { /*Задаем размеры колонок для блоков price на странице MENU*/
+    width: 363px;
+    height: 462px;
+}
+.bluda:not(:nth-child(1)) { /*Изменяем отступы сверху для первого элемента в колонке блока price_pizza на странице MENU*/
+    margin: 33px 0;
+}
+.food { /*Задаем размер шрифта и высоту строки для нижней строчки в прайсе на странице MENU*/
+    font-size: 13px;
+    line-height: 14px;
+}
+.menu a { /*Задаем параметры текста и размеры элементов в списке на странице MENU*/
+    width: 120px;
+    height: 50px;
+    position: relative;
+    left: 300px;
+    top: 174px;
+    font-weight: bold;
+    line-height: 18px;
+    text-decoration: none;
+    display: table-cell;
+    vertical-align: middle;
+    color: #333333;
+}
+.menu ul { /*Задаем ширину, отступы и расположение списка элементов на странице MENU*/
+    justify-content: space-around;
+    max-width: 800px;
+    margin: -120px 0 0 -20px;
+    display: flex;
+}
+.menu_line { /*Задаем ширину, высоту, цвет, прозрачность и поворот для всех линий между элементами меню на странице MENU*/
+    width: 50px;
+    height: 1px;
+    border: 1px solid rgba(51, 51, 51, 0.2);
+    transform: rotate(-90deg);
+}
+.line_10 { /*Задаем положение первой линии между элементами меню на странице MENU*/
+    position: relative;
+    top: 141px;
+    left: -285px;
+}
+.line_11 { /*Задаем положение второй линии между элементами меню на странице MENU*/
+    position: relative;
+    top: 132px;
+    left: -170px;
+}
+.line_12 { /*Задаем положение третьей линии между элементами меню на странице MENU*/
+    position: relative;
+    top: 123px;
+    left: -55px;
+}
+.line_13 { /*Задаем положение четвертой линии между элементами меню на странице MENU*/
+    position: relative;
+    top: 114px;
+    left: 60px;
+}
+.line_14 { /*Задаем положение пятой линии между элементами меню на странице MENU*/
+    position: relative;
+    top: 105px;
+    left: 173px;
+}
+.line_15 { /*Задаем положение шестой линии между элементами меню на странице MENU*/
+    position: relative;
+    top: 96px;
+    left: 288px;
+}
+
+/*EVENTS*/
+.events { /*Задаем положение блока PRIVATE EVENTS, ширину и высоту в рх, картинку фона*/
+    position: relative;
+    margin-top: 4420px;
+    margin-left: -1440px;
+    width: 1440px;
+    height: 920px;
+    background: url("img/private_events/private_events-bg.jpg") no-repeat;
+}
+.events_text { /*Задаем отступы заголовку h2 на странице PRIVATE EVENTS*/
+    position: relative;
+    top: -12px;
+}
+.events_image_1 { /*Задаем положение и параметры первой картинки на странице PRIVATE EVENTS*/
+    position: relative;
+    top: -22px;
+    left: -316px;
+    width: 395px;
+    height: 475px;
+    box-shadow: 0px 0px 50px #000000;
+    z-index: 3;
+}
+.events_header_1 { /*Задаем положение и параметры заголовка для первой картинки на странице PRIVATE EVENTS*/
+    position: relative;
+    top: -328px;
+    left: 400px;
+    width: 475px;
+    height: 80px;
+    background-color: #000000;
+    font-size: 24px;
+    line-height: 12px;
+    display: flex;
+    align-items: center;
+    text-indent: 20px;
+    color: #FFFFFF;
+    transform: rotate(90deg);
+}
+.events_rectangle_block_1 { /*Задаем положение и z-index большого прямоугольника для первой картинки на странице PRIVATE EVENTS*/
+    position: relative;
+    top: -630px;
+    left: -210px;
+    z-index: 4;
+}
+.events_image_2 { /*Задаем положение и параметры второй картинки на странице PRIVATE EVENTS*/
+    position: relative;
+    top: -655px;
+    left: 316px;
+    width: 395px;
+    height: 475px;
+    box-shadow: 0px 0px 50px #000000;
+    z-index: 3;
+}
+.events_header_2 { /*Задаем положение и параметры заголовка для второй картинки на странице PRIVATE EVENTS*/
+    position: relative;
+    top: -960px;
+    left: 560px;
+    width: 475px;
+    height: 80px;
+    background-color: #000000;
+    font-size: 24px;
+    line-height: 12px;
+    display: flex;
+    align-items: center;
+    text-indent: 20px;
+    color: #FFFFFF;
+    transform: rotate(-90deg);
+}
+.events_rectangle_block_2 { /*Задаем положение и z-index большого прямоугольника для второй картинки на странице PRIVATE EVENTS*/
+    position: relative;
+    top: -1263px;
+    left: 813px;
+    z-index: 4;
+}
+.line_16, .line_17, .line_18 { /*Задаем положение и общие параметры для вертикальных линий на странице PRIVATE EVENTS*/
+    position: relative;
+    top: -1050px;
+    left: 0px;
+    width: 675px;
+    transform: rotate(90deg);
+}
+.line_17 { /*Задаем положение для одной вертикальной линии (справа) на странице PRIVATE EVENTS*/
+    position: relative;
+    top: -1060px;
+    left: 424px;
+    z-index: 2;
+}
+.line_18 { /*Задаем положение и z-index для одной вертикальной линии (слева) на странице PRIVATE EVENTS*/
+    position: relative;
+    top: -1068px;
+    left: -424px;
+    z-index: 2;
+}
+.events_small_text { /*Задаем положение и параметры мелкого текста на странице PRIVATE EVENTS*/
+    position: relative;
+    top: -840px;
+    left: -1px;
+    width: 1440px;
+    height: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.5);
+    border-radius: 5px;
+}
+
+/*GALERIE*/
+.galerie { /*Задаем положение блока GALERIE, ширину и высоту в рх, картинку фона*/
+    position: relative;
+    margin-top: 5095px;
+    margin-left: -1440px;
+    width: 1439px;
+    height: 360px;
+    display: flex;
+}
+.galerie_img { /*Задаем ширину и высоту картинок в блоке GALERIE*/
+    position: relative;
+    max-width: 360px;
+    max-height: 360px;
+}
+
+/*CONTACT*/
+.contact { /*Задаем положение блока CONTACT, ширину и высоту в рх*/
+    position: relative;
+    margin-top: 5455px;
+    margin-left: -1440px;
+    width: 1440px;
+    height: 647px;
+}
+.contact_header { /*Задаем отступ сверху для заголовка на странице CONTACT*/
+    position: relative;
+    top: 62px;
+}
+.contact_rectangle { /*Задаем отступ сверху для маленького прямоугольника на странице CONTACT*/
+    position: relative;
+    top: 18px;
+}
+.contact_block_paragraph { /*Задаем размеры и отступы блока с текстом на странице CONTACT*/
+    position: relative;
+    top: 15px;
+    width: 565px;
+    height: 76px;
+    margin: 0 auto;
+}
+.contact_form { /*Задаем размеры и отступы блока с формой на странице CONTACT*/
+    position: relative;
+    width: 1280px;
+    height: 266px;
+    margin: 65px auto;
+}
+.input_contact { /*Задаем ширину полей ввода в форме на странице CONTACT*/
+    width: 420px;
+}
+.contact_input { /*Задаем выравнивание для блока с первыми тремя полями ввода на странице CONTACT*/
+    display: flex;
+    justify-content: space-between;
+}
+.contact_message { /*Задаем размеры поля для ввода сообщений, его отступ сверху и размер шрифта внутри на странице CONTACT*/
+    position: relative;
+    top: 10px;
+    width: 1275px;
+    height: 120px;
+    font-size: 18px;
+}
+.block_icons_and_button { /*Задаем выравнивание для блока с икноками и кнопкой отправки сообщения на странице CONTACT*/
+    display: flex;
+    justify-content: space-between;
+}
+.contact_icons { /*Задаем параметры для блока с иконками и контактами на странице CONTACT*/
+    position: relative;
+    top: 15px;
+    width: 638px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    color: #CCCCCC;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 14px;
+}
+.contact_icons > p > span { /*Задаем цвет и размер иконок на странице CONTACT*/
+    color: #E8C300; 
+    font-size: 16px;
+}
+.contact_submit { /*Задаем положение, размеры и цвет текста внутри кнопки отправки сообщений на странице CONTACT*/
+    position: relative;
+    top: 15px;
+    left: 0px;
+    width: 638px;
+    height: 60px;
+    color: #FFFFFF;
+}
+
+/*MAPS*/
+.maps { /*Задаем положение блока MAPS, ширину и высоту в рх*/
+    position: relative;
+    margin-top: 6103px;
+    margin-left: -1440px;
+    width: 1440px;
+    height: 575px;
+}
+.footer { /*Задаем параметры для footer*/
+    width: 1440px;
+    height: 100px;
+    background: rgba(0, 0, 0, 0.9);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
